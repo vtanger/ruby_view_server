@@ -1,5 +1,5 @@
 require 'erb'
 
-x = 42
+x = Time.now
 template = ERB.new "The value of x is: <%= x %>"
 puts template.result(binding)
